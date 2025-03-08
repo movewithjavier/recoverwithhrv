@@ -1,0 +1,36 @@
+name: Deploy to Replit
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      # This uses Replit's GitHub integration if enabled
+      # If you prefer direct deployment, you'd need to use a different approach
+      - name: Trigger Replit deploy
+        run: |
+          echo "Deployment triggered. Your Replit project will update automatically if GitHub integration is set up."
+          echo "For manual deployment, check the deploy-to-replit.js script in the deployment directory."
+        
+      # Optional: If you want to use the deploy script directly
+      # You would need to set up SSH keys or another secure method to access your Replit
+      # - name: Run deploy script
+      #   run: node deployment/deploy-to-replit.js
+      #   env:
+      #     REPLIT_TOKEN: ${{ secrets.REPLIT_TOKEN }} 

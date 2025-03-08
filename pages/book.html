@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The HRV Recovery Blueprint: The definitive guide to using Heart Rate Variability for optimizing recovery, performance, and health. Transform your approach to training and recovery.">
-  <meta name="keywords" content="HRV, heart rate variability, recovery, health, wellness, book, guide, performance">
+  <meta name="description" content="The HRV Recovery Blueprint: A science-based guide to using heart rate variability to optimize your health, performance, and well-being.">
+  <meta name="keywords" content="HRV, heart rate variability, recovery, health, wellness, book, blueprint">
   <meta name="author" content="RecoverwithHRV">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://recoverwithhrv.com/book">
-  <meta property="og:title" content="The HRV Recovery Blueprint: Transform Your Health & Performance">
-  <meta property="og:description" content="The definitive guide to using Heart Rate Variability for optimizing recovery, performance, and health. Transform your approach to training and recovery.">
-  <meta property="og:image" content="assets/images/hero/hero-book.jpg">
+  <meta property="og:title" content="The HRV Recovery Blueprint | RecoverwithHRV">
+  <meta property="og:description" content="The definitive guide to using heart rate variability to optimize your health, performance, and well-being.">
+  <meta property="og:image" content="../assets/images/misc/book-cover.jpg">
   
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://recoverwithhrv.com/book">
-  <meta property="twitter:title" content="The HRV Recovery Blueprint: Transform Your Health & Performance">
-  <meta property="twitter:description" content="The definitive guide to using Heart Rate Variability for optimizing recovery, performance, and health. Transform your approach to training and recovery.">
-  <meta property="twitter:image" content="assets/images/hero/hero-book.jpg">
+  <meta property="twitter:title" content="The HRV Recovery Blueprint | RecoverwithHRV">
+  <meta property="twitter:description" content="The definitive guide to using heart rate variability to optimize your health, performance, and well-being.">
+  <meta property="twitter:image" content="../assets/images/misc/book-cover.jpg">
   
-  <title>The HRV Recovery Blueprint: Transform Your Health & Performance | RecoverwithHRV</title>
+  <title>The HRV Recovery Blueprint | RecoverwithHRV</title>
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/logos/favicon.png">
+  <link rel="icon" type="image/png" href="../assets/images/logos/favicon.png">
   
   <!-- CSS -->
   <link rel="stylesheet" href="../css/normalize.css">
@@ -35,37 +35,41 @@
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   
-  <!-- Placeholder Images Script (for development only) -->
+  <!-- Placeholder Images Script (for development only) - Removed since we now have real images -->
   <!-- <script src="../js/placeholder-images.js"></script> -->
   
-  <!-- Inline styles for testing -->
   <style>
-    /* Test styles to ensure header scroll effect works */
-    .header {
-      transition: all 0.3s ease !important;
+    /* Add inline styles for immediate fixes */
+    .hero__overlay {
+      background-color: rgba(0, 0, 0, 0.5);
     }
     
-    .header.scrolled {
-      height: 65px !important;
-      background-color: rgba(255, 255, 255, 0.95) !important;
-      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1) !important;
+    .hero__title, .hero__subtitle {
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
     
-    /* Add padding to body to ensure content is visible below fixed header */
-    body {
-      padding-top: 0; /* Remove the padding to fix the gap */
+    .hero__trust {
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border-radius: 10px;
+      padding: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
     }
     
-    /* Hero styles moved to external CSS files */
+    /* Fix for books specs display */
+    .book-specs__item {
+      padding: 10px 15px;
+      background-color: rgba(var(--primary-rgb), 0.1);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
     
-    @media (max-width: 768px) {
-      .hero__title {
-        font-size: 2.5rem;
-      }
-      
-      .hero__subtitle {
-        font-size: 1.2rem;
-      }
+    .book-specs__icon {
+      margin-right: 10px;
+      color: var(--primary-color);
     }
   </style>
 </head>
@@ -84,50 +88,55 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero book-hero">
+    <div class="hero__overlay"></div>
     <div class="container">
-      <div class="hero__content">
-        <h1 class="hero__title">The HRV Recovery Blueprint</h1>
-        <p class="hero__subtitle">The definitive guide to using Heart Rate Variability to optimize your recovery, performance, and health.</p>
-        <a href="#buy-now" class="hero__cta btn btn--accent btn--lg">Get Your Copy Now <i class="fas fa-arrow-right"></i></a>
-        
-        <!-- Trust indicators -->
-        <div class="hero__trust">
-          <div class="hero__trust-item">
-            <i class="fas fa-star"></i>
-            <span>4.9/5 average rating</span>
-          </div>
-          <div class="hero__trust-item">
-            <i class="fas fa-users"></i>
-            <span>2,500+ satisfied readers</span>
-          </div>
-          <div class="hero__trust-item">
-            <i class="fas fa-shield-alt"></i>
-            <span>60-day money-back guarantee</span>
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">The HRV Recovery Blueprint</h1>
+          <p class="hero__subtitle">The definitive guide to using heart rate variability to transform your health and performance</p>
+          <a href="#buy-now" class="hero__cta btn btn--accent btn--lg">Get Your Copy Now <i class="fas fa-arrow-right"></i></a>
+          
+          <!-- Trust indicators -->
+          <div class="hero__trust">
+            <div class="hero__trust-item">
+              <i class="fas fa-star"></i>
+              <span>4.8/5 from 230+ reviews</span>
+            </div>
+            <div class="hero__trust-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Trusted by 10,000+ readers</span>
+            </div>
+            <div class="hero__trust-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>30-day money-back guarantee</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Problem Agitation Section -->
+  <!-- Problem/Solution Section -->
   <section class="section bg-light">
     <div class="container">
       <div class="problem">
-        <h2 class="problem__title text-center">Are You Making These Recovery Mistakes?</h2>
+        <h2 class="problem__title text-center">You're Working Hard, But Are You Recovering Smarter?</h2>
         <div class="problem__content">
           <div class="problem__text">
-            <p class="problem__lead">Most athletes and health-conscious individuals are <strong>sabotaging their own progress</strong> without even realizing it:</p>
+            <p>Most health and fitness advice focuses exclusively on what you do during training, ignoring the critical component of recovery.</p>
+            
+            <p>Without optimizing your recovery, you're likely experiencing:</p>
             
             <ul class="problem__list">
-              <li><i class="fas fa-times-circle"></i> <strong>Training too hard</strong> on days when your body needs recovery</li>
-              <li><i class="fas fa-times-circle"></i> <strong>Resting too much</strong> on days when you could push harder</li>
-              <li><i class="fas fa-times-circle"></i> <strong>Ignoring early warning signs</strong> of overtraining and burnout</li>
-              <li><i class="fas fa-times-circle"></i> <strong>Following generic training plans</strong> that don't account for your unique recovery needs</li>
-              <li><i class="fas fa-times-circle"></i> <strong>Misinterpreting body signals</strong> about stress and recovery</li>
+              <li><i class="fas fa-times-circle"></i> <strong>Plateaued results</strong> despite consistent training</li>
+              <li><i class="fas fa-times-circle"></i> <strong>Unexplained fatigue</strong> that doesn't improve with sleep</li>
+              <li><i class="fas fa-times-circle"></i> <strong>Recurring injuries</strong> that slow your progress</li>
+              <li><i class="fas fa-times-circle"></i> <strong>Inconsistent performance</strong> from day to day</li>
+              <li><i class="fas fa-times-circle"></i> <strong>Training sessions that feel harder</strong> than they should</li>
             </ul>
             
-            <p class="problem__emphasis">Without a reliable system to monitor your recovery status, you're <em>wasting up to 40% of your training efforts</em> and risking injury or burnout.</p>
+            <p>The key to breaking through these challenges isn't more training or another supplement—it's understanding and optimizing your recovery through Heart Rate Variability (HRV).</p>
           </div>
           <div class="problem__image">
             <img src="../assets/images/misc/book-cover.jpg" alt="The HRV Recovery Blueprint Book Cover" class="problem__img">
@@ -141,78 +150,95 @@
   <section class="section">
     <div class="container">
       <div class="book-overview">
-        <div class="book-overview__image">
-          <img src="../assets/images/misc/book-cover.jpg" alt="The HRV Recovery Blueprint Book Cover" class="book-overview__img">
-          <div class="book-overview__badge">
-            <span class="book-overview__badge-text">Includes Digital + Print Formats</span>
-          </div>
-        </div>
+        <h2 class="book-overview__title text-center">Introducing The HRV Recovery Blueprint</h2>
         <div class="book-overview__content">
-          <h2 class="book-overview__title">Transform Your Approach to Health and Performance</h2>
-          <p class="book-overview__text">In <strong>The HRV Recovery Blueprint</strong>, you'll discover a science-backed system for using Heart Rate Variability to optimize every aspect of your health and performance.</p>
-          <p class="book-overview__text">Whether you're an athlete looking to improve recovery, a busy professional trying to manage stress, or someone interested in enhancing your overall well-being, this book provides practical strategies you can implement immediately.</p>
-          <div class="book-overview__features">
-            <div class="book-overview__feature">
-              <i class="fas fa-check-circle"></i>
-              <span>200+ pages of actionable content</span>
-            </div>
-            <div class="book-overview__feature">
-              <i class="fas fa-check-circle"></i>
-              <span>Step-by-step HRV monitoring protocols</span>
-            </div>
-            <div class="book-overview__feature">
-              <i class="fas fa-check-circle"></i>
-              <span>Data interpretation guidelines</span>
-            </div>
-            <div class="book-overview__feature">
-              <i class="fas fa-check-circle"></i>
-              <span>Recovery optimization strategies</span>
-            </div>
-            <div class="book-overview__feature">
-              <i class="fas fa-check-circle"></i>
-              <span>Case studies and real-world examples</span>
-            </div>
+          <div class="book-overview__image">
+            <img src="../assets/images/misc/book-cover.jpg" alt="The HRV Recovery Blueprint Book Cover" class="book-overview__img">
           </div>
-          <div class="book-overview__cta">
-            <a href="#buy-now" class="btn btn--accent btn--lg">Get Your Copy Now <i class="fas fa-arrow-right"></i></a>
+          <div class="book-overview__text">
+            <p>This comprehensive guide provides a science-based approach to using Heart Rate Variability to optimize your recovery and performance.</p>
+            
+            <p>What makes this book different is its <strong>practical, actionable focus</strong> on implementing HRV into your daily routine without drowning in technical jargon or unproven theories.</p>
+            
+            <p>Whether you're an athlete, fitness enthusiast, or health-conscious individual, this book will show you how to:</p>
+            
+            <ul class="book-overview__list">
+              <li><i class="fas fa-check-circle"></i> Measure and interpret your HRV data correctly</li>
+              <li><i class="fas fa-check-circle"></i> Create a personalized recovery protocol based on your HRV</li>
+              <li><i class="fas fa-check-circle"></i> Identify when to push and when to rest for optimal results</li>
+              <li><i class="fas fa-check-circle"></i> Detect overtraining before it derails your progress</li>
+              <li><i class="fas fa-check-circle"></i> Optimize sleep, nutrition, and stress management using HRV feedback</li>
+            </ul>
+            
+            <div class="book-overview__cta">
+              <a href="#buy-now" class="btn btn--accent btn--lg">Get Your Copy Now <i class="fas fa-arrow-right"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Benefits Section -->
+  <!-- What You'll Learn Section -->
   <section class="section bg-light">
     <div class="container">
-      <h2 class="text-center mb-5">How This Book Will Transform Your Health</h2>
-      <div class="benefits">
-        <div class="benefit">
-          <div class="benefit__icon">
-            <i class="fas fa-heartbeat"></i>
+      <h2 class="text-center mb-5">What You'll Learn in The HRV Recovery Blueprint</h2>
+      <div class="chapters">
+        <div class="chapter">
+          <div class="chapter__number">01</div>
+          <div class="chapter__content">
+            <h3 class="chapter__title">The Science of HRV</h3>
+            <p class="chapter__text">Understand what HRV is, how it reflects your nervous system's state, and why it's the most powerful biomarker for recovery. No complex physiology degree required—just clear, practical explanations.</p>
           </div>
-          <h3 class="benefit__title">Optimize Recovery</h3>
-          <p class="benefit__text">Learn exactly when to push harder and when to rest based on objective data about your body's recovery status, reducing injury risk by up to 60%.</p>
         </div>
-        <div class="benefit">
-          <div class="benefit__icon">
-            <i class="fas fa-dumbbell"></i>
+        <div class="chapter">
+          <div class="chapter__number">02</div>
+          <div class="chapter__content">
+            <h3 class="chapter__title">Measuring Your HRV</h3>
+            <p class="chapter__text">Learn about the different devices and apps for measuring HRV, with step-by-step instructions to ensure accurate readings. Includes reviews of popular options for every budget.</p>
           </div>
-          <h3 class="benefit__title">Improve Performance</h3>
-          <p class="benefit__text">Enhance your physical performance by 15-20% by training at the right intensity at the right time, based on your body's readiness.</p>
         </div>
-        <div class="benefit">
-          <div class="benefit__icon">
-            <i class="fas fa-brain"></i>
+        <div class="chapter">
+          <div class="chapter__number">03</div>
+          <div class="chapter__content">
+            <h3 class="chapter__title">Interpreting Your Data</h3>
+            <p class="chapter__text">Discover how to analyze your HRV data to extract meaningful insights about your recovery status, stress levels, and readiness to train. Includes case studies and example data sets.</p>
           </div>
-          <h3 class="benefit__title">Manage Stress</h3>
-          <p class="benefit__text">Identify specific stressors in your life and develop effective strategies to mitigate their impact, improving mental clarity and focus.</p>
         </div>
-        <div class="benefit">
-          <div class="benefit__icon">
-            <i class="fas fa-bed"></i>
+        <div class="chapter">
+          <div class="chapter__number">04</div>
+          <div class="chapter__content">
+            <h3 class="chapter__title">The HRV Recovery Protocol</h3>
+            <p class="chapter__text">A comprehensive framework for using your HRV data to optimize training decisions, recovery strategies, and lifestyle factors. Includes daily, weekly, and monthly implementation guides.</p>
           </div>
-          <h3 class="benefit__title">Enhance Sleep</h3>
-          <p class="benefit__text">Optimize your sleep quality and duration based on your HRV patterns, increasing deep sleep by up to 30% for faster recovery.</p>
+        </div>
+        <div class="chapter">
+          <div class="chapter__number">05</div>
+          <div class="chapter__content">
+            <h3 class="chapter__title">Nutrition & HRV</h3>
+            <p class="chapter__text">How specific nutrition strategies can improve your HRV scores and accelerate recovery, with meal timing protocols and food recommendations based on your HRV trends.</p>
+          </div>
+        </div>
+        <div class="chapter">
+          <div class="chapter__number">06</div>
+          <div class="chapter__content">
+            <h3 class="chapter__title">Sleep Optimization</h3>
+            <p class="chapter__text">Use HRV to assess your sleep quality and implement targeted improvements to your sleep routine, environment, and habits for enhanced recovery.</p>
+          </div>
+        </div>
+        <div class="chapter">
+          <div class="chapter__number">07</div>
+          <div class="chapter__content">
+            <h3 class="chapter__title">Stress Management</h3>
+            <p class="chapter__text">Specific techniques to improve HRV by reducing physical and mental stress, with protocols for breathing exercises, meditation, and recovery activities calibrated to your HRV readings.</p>
+          </div>
+        </div>
+        <div class="chapter">
+          <div class="chapter__number">08</div>
+          <div class="chapter__content">
+            <h3 class="chapter__title">Long-term HRV Tracking</h3>
+            <p class="chapter__text">How to maintain and analyze your HRV data over months and years to identify patterns, prevent overtraining, and continuously improve your performance and health.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -227,329 +253,203 @@
         </div>
         <div class="author__content">
           <h2 class="author__title">About the Author</h2>
-          <p class="author__text">With over 15 years of experience in performance coaching and health optimization, the author has worked with elite athletes, busy executives, and health-conscious individuals to improve their recovery and performance using HRV monitoring.</p>
-          <p class="author__text">As a certified strength and conditioning specialist and health coach, they have developed a unique approach to using HRV data to guide training, recovery, and lifestyle decisions. Their methods have helped thousands of people achieve better health outcomes and performance results.</p>
-          <p class="author__text">The author is also a regular speaker at health and performance conferences and has been featured in numerous publications for their work on recovery optimization.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- What You'll Learn Section -->
-  <section class="section bg-light">
-    <div class="container">
-      <h2 class="text-center mb-5">What You'll Learn</h2>
-      <div class="book-chapters">
-        <div class="book-chapter">
-          <div class="book-chapter__number">01</div>
-          <div class="book-chapter__content">
-            <h3 class="book-chapter__title">The Science of HRV</h3>
-            <p class="book-chapter__text">Understand the physiological mechanisms behind HRV and why it's such a powerful biomarker for health and recovery.</p>
+          <p class="author__text">Hi, I'm Dr. Michael Stevens, the founder of RecoverwithHRV and author of The HRV Recovery Blueprint.</p>
+          
+          <p>With a background in exercise physiology and over a decade of experience working with athletes and health-conscious individuals, I've seen firsthand how proper recovery is the missing link in most training programs.</p>
+          
+          <p>After experiencing my own struggles with overtraining and recurring injuries, I discovered the transformative power of HRV monitoring. What started as personal experimentation grew into a comprehensive system that has helped thousands optimize their recovery and performance.</p>
+          
+          <p>This book distills everything I've learned from working with elite athletes, weekend warriors, and health-focused individuals who want to get the most from their bodies.</p>
+          
+          <div class="author__credentials">
+            <div class="author__credential">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Ph.D. in Exercise Physiology</span>
+            </div>
+            <div class="author__credential">
+              <i class="fas fa-medal"></i>
+              <span>Certified Strength & Conditioning Specialist</span>
+            </div>
+            <div class="author__credential">
+              <i class="fas fa-users"></i>
+              <span>Helped 10,000+ individuals optimize recovery</span>
+            </div>
           </div>
         </div>
-        <div class="book-chapter">
-          <div class="book-chapter__number">02</div>
-          <div class="book-chapter__content">
-            <h3 class="book-chapter__title">Measuring HRV Accurately</h3>
-            <p class="book-chapter__text">Learn about different measurement tools and protocols to ensure you're getting reliable data.</p>
-          </div>
-        </div>
-        <div class="book-chapter">
-          <div class="book-chapter__number">03</div>
-          <div class="book-chapter__content">
-            <h3 class="book-chapter__title">Interpreting Your Data</h3>
-            <p class="book-chapter__text">Discover how to analyze your HRV trends and what different patterns mean for your health.</p>
-          </div>
-        </div>
-        <div class="book-chapter">
-          <div class="book-chapter__number">04</div>
-          <div class="book-chapter__content">
-            <h3 class="book-chapter__title">HRV for Athletic Performance</h3>
-            <p class="book-chapter__text">Implement HRV-guided training to optimize your workout timing, intensity, and recovery periods.</p>
-          </div>
-        </div>
-        <div class="book-chapter">
-          <div class="book-chapter__number">05</div>
-          <div class="book-chapter__content">
-            <h3 class="book-chapter__title">Recovery Optimization</h3>
-            <p class="book-chapter__text">Learn specific strategies to improve your recovery based on your HRV data.</p>
-          </div>
-        </div>
-        <div class="book-chapter">
-          <div class="book-chapter__number">06</div>
-          <div class="book-chapter__content">
-            <h3 class="book-chapter__title">Stress Management</h3>
-            <p class="book-chapter__text">Use HRV to identify stressors and implement effective stress reduction techniques.</p>
-          </div>
-        </div>
-        <div class="book-chapter">
-          <div class="book-chapter__number">07</div>
-          <div class="book-chapter__content">
-            <h3 class="book-chapter__title">Sleep Enhancement</h3>
-            <p class="book-chapter__text">Optimize your sleep quality and duration using HRV monitoring.</p>
-          </div>
-        </div>
-        <div class="book-chapter">
-          <div class="book-chapter__number">08</div>
-          <div class="book-chapter__content">
-            <h3 class="book-chapter__title">Nutrition and HRV</h3>
-            <p class="book-chapter__text">Understand how different foods and eating patterns affect your HRV and recovery.</p>
-          </div>
-        </div>
-        <div class="book-chapter">
-          <div class="book-chapter__number">09</div>
-          <div class="book-chapter__content">
-            <h3 class="book-chapter__title">Long-term Health Monitoring</h3>
-            <p class="book-chapter__text">Create a sustainable system for using HRV to track and improve your health over time.</p>
-          </div>
-        </div>
-        <div class="book-chapter">
-          <div class="book-chapter__number">10</div>
-          <div class="book-chapter__content">
-            <h3 class="book-chapter__title">Case Studies and Success Stories</h3>
-            <p class="book-chapter__text">Learn from real-world examples of how others have transformed their health using HRV.</p>
-          </div>
-        </div>
-      </div>
-      <div class="book-chapters__cta text-center mt-5">
-        <a href="#buy-now" class="btn btn--accent btn--lg">Get Your Copy Now <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
 
   <!-- Testimonials Section -->
-  <section class="testimonials">
+  <section class="testimonials bg-light">
     <div class="container">
       <h2 class="testimonials__title">What Readers Are Saying</h2>
-      <div class="testimonial-slider">
-        <div class="testimonial-slider__container">
-          <div class="testimonial-slider__slide">
-            <div class="testimonial">
-              <div class="testimonial__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="testimonial__content">"This book completely changed my approach to training. I've been able to increase my performance while actually training less, all by following the HRV protocols outlined in the book. I PR'd in my marathon by 12 minutes after just 8 weeks!"</p>
-              <div class="testimonial__author">
-                <img src="../assets/images/testimonials/testimonial-4.jpg" alt="James T." class="testimonial__author-img">
-                <div class="testimonial__author-info">
-                  <span class="testimonial__author-name">James T.</span>
-                  <span class="testimonial__author-title">Marathon Runner</span>
-                </div>
-              </div>
-            </div>
+      <div class="testimonials__container">
+        <div class="testimonial">
+          <div class="testimonial__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
-          <div class="testimonial-slider__slide">
-            <div class="testimonial">
-              <div class="testimonial__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="testimonial__content">"As someone who struggled with burnout, the stress management techniques in this book have been life-changing. I now have objective data to guide my recovery and work schedule. My sleep quality has improved by 40% and my energy levels are consistently higher."</p>
-              <div class="testimonial__author">
-                <img src="../assets/images/testimonials/testimonial-5.jpg" alt="Lisa M." class="testimonial__author-img">
-                <div class="testimonial__author-info">
-                  <span class="testimonial__author-name">Lisa M.</span>
-                  <span class="testimonial__author-title">Tech Executive</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-slider__slide">
-            <div class="testimonial">
-              <div class="testimonial__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="testimonial__content">"The practical approach in this book makes complex HRV concepts easy to understand and implement. I've recommended it to all my clients who want to optimize their health. The step-by-step protocols are worth the price of the book alone."</p>
-              <div class="testimonial__author">
-                <img src="../assets/images/testimonials/testimonial-6.jpg" alt="Robert K." class="testimonial__author-img">
-                <div class="testimonial__author-info">
-                  <span class="testimonial__author-name">Robert K.</span>
-                  <span class="testimonial__author-title">Personal Trainer</span>
-                </div>
-              </div>
+          <p class="testimonial__content">"This book transformed my approach to training. By following the HRV protocols, I've PR'd in both my marathon and half marathon times this year, all while training fewer days per week than before."</p>
+          <div class="testimonial__author">
+            <img src="../assets/images/testimonials/testimonial-4.jpg" alt="James T." class="testimonial__author-img">
+            <div class="testimonial__author-info">
+              <span class="testimonial__author-name">James T.</span>
+              <span class="testimonial__author-title">Marathon Runner</span>
             </div>
           </div>
         </div>
-        <div class="testimonial-slider__dots"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Buy Now Section -->
-  <section id="buy-now" class="section bg-light">
-    <div class="container">
-      <div class="buy-now">
-        <h2 class="buy-now__title text-center">Get Your Copy Today</h2>
-        <p class="buy-now__subtitle text-center">Choose the package that works best for you</p>
-        
-        <div class="buy-now__options">
-          <div class="buy-now__option">
-            <div class="buy-now__option-header">
-              <h3 class="buy-now__option-title">Digital Edition</h3>
-              <div class="buy-now__option-price">$19.99</div>
-            </div>
-            <div class="buy-now__option-features">
-              <div class="buy-now__option-feature">
-                <i class="fas fa-check"></i>
-                <span>Instant download</span>
-              </div>
-              <div class="buy-now__option-feature">
-                <i class="fas fa-check"></i>
-                <span>PDF, EPUB, and MOBI formats</span>
-              </div>
-              <div class="buy-now__option-feature">
-                <i class="fas fa-check"></i>
-                <span>Read on any device</span>
-              </div>
-              <div class="buy-now__option-feature">
-                <i class="fas fa-check"></i>
-                <span>Free updates</span>
-              </div>
-            </div>
-            <a href="#" class="buy-now__option-cta btn btn--accent btn--block">Get Digital Edition <i class="fas fa-arrow-right"></i></a>
+        <div class="testimonial">
+          <div class="testimonial__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
-          <div class="buy-now__option buy-now__option--featured">
-            <div class="buy-now__option-badge">Most Popular</div>
-            <div class="buy-now__option-header">
-              <h3 class="buy-now__option-title">Print + Digital Bundle</h3>
-              <div class="buy-now__option-price"><span class="buy-now__option-original">$39.99</span> $29.99</div>
+          <p class="testimonial__content">"As a strength athlete, I was skeptical about HRV, but the results speak for themselves. I've added 40lbs to my deadlift and 25lbs to my bench press in 6 months while actually reducing my training volume."</p>
+          <div class="testimonial__author">
+            <img src="../assets/images/testimonials/testimonial-5.jpg" alt="Lisa R." class="testimonial__author-img">
+            <div class="testimonial__author-info">
+              <span class="testimonial__author-name">Lisa R.</span>
+              <span class="testimonial__author-title">Powerlifter</span>
             </div>
-            <div class="buy-now__option-features">
-              <div class="buy-now__option-feature">
-                <i class="fas fa-check"></i>
-                <span>Physical book shipped to you</span>
-              </div>
-              <div class="buy-now__option-feature">
-                <i class="fas fa-check"></i>
-                <span>Instant access to digital edition</span>
-              </div>
-              <div class="buy-now__option-feature">
-                <i class="fas fa-check"></i>
-                <span>All digital formats included</span>
-              </div>
-              <div class="buy-now__option-feature">
-                <i class="fas fa-check"></i>
-                <span>Free updates to digital version</span>
-              </div>
-            </div>
-            <a href="#" class="buy-now__option-cta btn btn--accent btn--block">Get Print + Digital <i class="fas fa-arrow-right"></i></a>
-          </div>
-          <div class="buy-now__option">
-            <div class="buy-now__option-header">
-              <h3 class="buy-now__option-title">Premium Package</h3>
-              <div class="buy-now__option-price">$49.99</div>
-            </div>
-            <div class="buy-now__option-features">
-              <div class="buy-now__option-feature">
-                <i class="fas fa-check"></i>
-                <span>Everything in Print + Digital</span>
-              </div>
-              <div class="buy-now__option-feature">
-                <i class="fas fa-check"></i>
-                <span>HRV Tracking Spreadsheet</span>
-              </div>
-              <div class="buy-now__option-feature">
-                <i class="fas fa-check"></i>
-                <span>Video tutorials</span>
-              </div>
-              <div class="buy-now__option-feature">
-                <i class="fas fa-check"></i>
-                <span>Exclusive bonus chapter</span>
-              </div>
-            </div>
-            <a href="#" class="buy-now__option-cta btn btn--accent btn--block">Get Premium Package <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
-        
-        <div class="buy-now__guarantee">
-          <div class="buy-now__guarantee-icon">
-            <i class="fas fa-shield-alt"></i>
+        <div class="testimonial">
+          <div class="testimonial__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
           </div>
-          <div class="buy-now__guarantee-content">
-            <h3 class="buy-now__guarantee-title">60-Day Money-Back Guarantee</h3>
-            <p class="buy-now__guarantee-text">If you're not completely satisfied with the book, simply contact us within 60 days of purchase for a full refund. No questions asked. We're that confident you'll love it.</p>
-          </div>
-        </div>
-        
-        <div class="buy-now__trust">
-          <div class="buy-now__trust-item">
-            <i class="fas fa-lock"></i>
-            <span>Secure Payment</span>
-          </div>
-          <div class="buy-now__trust-item">
-            <i class="fas fa-truck"></i>
-            <span>Fast Shipping</span>
-          </div>
-          <div class="buy-now__trust-item">
-            <i class="fas fa-headset"></i>
-            <span>24/7 Support</span>
+          <p class="testimonial__content">"I'm not an athlete, but I wanted to improve my energy and overall health. This book provides a clear framework that anyone can follow. My energy levels are more consistent and I'm sleeping better than I have in years."</p>
+          <div class="testimonial__author">
+            <img src="../assets/images/testimonials/testimonial-6.jpg" alt="Robert M." class="testimonial__author-img">
+            <div class="testimonial__author-info">
+              <span class="testimonial__author-name">Robert M.</span>
+              <span class="testimonial__author-title">Business Executive</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ Section (Objection Handling) -->
+  <!-- Book Specs Section -->
   <section class="section">
     <div class="container">
-      <h2 class="text-center mb-5">Frequently Asked Questions</h2>
-      <div class="faq">
-        <div class="faq__item">
-          <h3 class="faq__question">Is this book suitable for beginners?</h3>
-          <p class="faq__answer">Absolutely! The book starts with the fundamentals of HRV and gradually introduces more advanced concepts. No prior knowledge of HRV or health monitoring is required. Many of our readers had zero experience with HRV before reading the book.</p>
-        </div>
-        <div class="faq__item">
-          <h3 class="faq__question">Do I need special equipment to implement the strategies in the book?</h3>
-          <p class="faq__answer">While having an HRV monitor is helpful, the book includes recommendations for various budget options, including smartphone apps that require no additional equipment. We also provide guidance on which devices offer the best accuracy for different needs. You can get started with just your smartphone.</p>
-        </div>
-        <div class="faq__item">
-          <h3 class="faq__question">How is this different from the free email course?</h3>
-          <p class="faq__answer">The email course provides a brief introduction to HRV concepts, while the book offers comprehensive coverage, detailed protocols, case studies, and specific strategies for different situations. Think of the email course as a primer and the book as the complete system with 5x more actionable content.</p>
-        </div>
-        <div class="faq__item">
-          <h3 class="faq__question">How long will shipping take for the physical book?</h3>
-          <p class="faq__answer">Domestic orders typically arrive within 5-7 business days. International shipping may take 10-14 business days depending on your location. You'll receive tracking information via email once your order ships. Digital versions are available immediately after purchase.</p>
-        </div>
-        <div class="faq__item">
-          <h3 class="faq__question">Can I get a refund if I'm not satisfied?</h3>
-          <p class="faq__answer">Yes! We offer a 60-day money-back guarantee. If you're not completely satisfied with your purchase, simply contact our support team for a full refund. We stand behind our product and want you to be 100% happy with your purchase.</p>
+      <div class="book-specs">
+        <h2 class="book-specs__title text-center">Book Specifications</h2>
+        <div class="book-specs__container">
+          <div class="book-specs__item">
+            <i class="fas fa-book book-specs__icon"></i>
+            <span>320 pages of practical HRV knowledge</span>
+          </div>
+          <div class="book-specs__item">
+            <i class="fas fa-file-pdf book-specs__icon"></i>
+            <span>Available in eBook (PDF, Kindle) and paperback formats</span>
+          </div>
+          <div class="book-specs__item">
+            <i class="fas fa-table book-specs__icon"></i>
+            <span>45 tables and charts for easy reference</span>
+          </div>
+          <div class="book-specs__item">
+            <i class="fas fa-clipboard-list book-specs__icon"></i>
+            <span>28 actionable protocols you can implement immediately</span>
+          </div>
+          <div class="book-specs__item">
+            <i class="fas fa-download book-specs__icon"></i>
+            <span>Free companion resources and worksheets</span>
+          </div>
+          <div class="book-specs__item">
+            <i class="fas fa-sync-alt book-specs__icon"></i>
+            <span>Lifetime updates for eBook version</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Final CTA Section -->
-  <section class="section bg-primary">
-    <div class="container text-center">
-      <h2 class="text-light mb-3">Ready to Transform Your Approach to Recovery?</h2>
-      <p class="text-light mb-4">Get your copy of The HRV Recovery Blueprint today and start optimizing your health and performance.</p>
-      <a href="#buy-now" class="btn btn--accent btn--lg">Get Your Copy Now <i class="fas fa-arrow-right"></i></a>
-      
-      <!-- Final Trust Indicators -->
-      <div class="final-cta__trust mt-4">
-        <div class="final-cta__trust-item">
-          <i class="fas fa-shield-alt"></i>
-          <span>60-Day Money-Back Guarantee</span>
+  <!-- Buy Now Section (Call to Action) -->
+  <section id="buy-now" class="section bg-primary">
+    <div class="container">
+      <div class="buy-now">
+        <h2 class="buy-now__title text-light">Get Your Copy of The HRV Recovery Blueprint</h2>
+        <p class="buy-now__subtitle text-light">Start optimizing your recovery and performance today</p>
+        
+        <div class="pricing">
+          <div class="pricing__option">
+            <div class="pricing__header">
+              <h3 class="pricing__title">eBook</h3>
+              <p class="pricing__price">$27</p>
+            </div>
+            <ul class="pricing__features">
+              <li><i class="fas fa-check"></i> Instant download</li>
+              <li><i class="fas fa-check"></i> PDF, Kindle & ePub formats</li>
+              <li><i class="fas fa-check"></i> Lifetime updates</li>
+              <li><i class="fas fa-check"></i> Companion worksheets</li>
+              <li><i class="fas fa-check"></i> 30-day money-back guarantee</li>
+            </ul>
+            <a href="#" class="btn btn--light btn--block">Buy eBook Now</a>
+          </div>
+          
+          <div class="pricing__option pricing__option--featured">
+            <div class="pricing__badge">Most Popular</div>
+            <div class="pricing__header">
+              <h3 class="pricing__title">eBook + Paperback</h3>
+              <p class="pricing__price">$47</p>
+            </div>
+            <ul class="pricing__features">
+              <li><i class="fas fa-check"></i> Instant eBook download</li>
+              <li><i class="fas fa-check"></i> Physical paperback shipped to you</li>
+              <li><i class="fas fa-check"></i> Lifetime eBook updates</li>
+              <li><i class="fas fa-check"></i> Companion worksheets</li>
+              <li><i class="fas fa-check"></i> 30-day money-back guarantee</li>
+            </ul>
+            <a href="#" class="btn btn--accent btn--block">Get Best Value Pack</a>
+          </div>
+          
+          <div class="pricing__option">
+            <div class="pricing__header">
+              <h3 class="pricing__title">Paperback</h3>
+              <p class="pricing__price">$37</p>
+            </div>
+            <ul class="pricing__features">
+              <li><i class="fas fa-check"></i> Physical book</li>
+              <li><i class="fas fa-check"></i> Shipped worldwide</li>
+              <li><i class="fas fa-check"></i> High-quality printing</li>
+              <li><i class="fas fa-check"></i> Companion resources online</li>
+              <li><i class="fas fa-check"></i> 30-day money-back guarantee</li>
+            </ul>
+            <a href="#" class="btn btn--light btn--block">Buy Paperback</a>
+          </div>
         </div>
-        <div class="final-cta__trust-item">
-          <i class="fas fa-star"></i>
-          <span>4.9/5 Average Rating (250+ Reviews)</span>
+        
+        <div class="guarantee">
+          <div class="guarantee__icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="guarantee__content">
+            <h3 class="guarantee__title">30-Day Money-Back Guarantee</h3>
+            <p class="guarantee__text">If you're not completely satisfied with the book, simply email us within 30 days of your purchase and we'll give you a full refund. No questions asked.</p>
+          </div>
         </div>
-        <div class="final-cta__trust-item">
-          <i class="fas fa-lock"></i>
-          <span>Secure Checkout</span>
-        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Call to Action -->
+  <section class="section">
+    <div class="container">
+      <div class="final-cta text-center">
+        <h2 class="final-cta__title">Ready to Transform Your Recovery and Performance?</h2>
+        <p class="final-cta__text">Join thousands who have already discovered the power of HRV to optimize their health and performance.</p>
+        <a href="#buy-now" class="btn btn--accent btn--lg">Get The HRV Recovery Blueprint</a>
       </div>
     </div>
   </section>
@@ -570,10 +470,8 @@
   </footer>
 
   <!-- JavaScript -->
-  <script src="../js/test-header.js"></script>
   <script src="../js/components/header-animation.js"></script>
   <script src="../js/components/testimonial-slider.js"></script>
   <script src="../js/components/analytics.js"></script>
-  <script src="../js/main.js"></script>
 </body>
 </html> 

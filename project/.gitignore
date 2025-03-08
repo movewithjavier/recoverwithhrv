@@ -1,0 +1,35 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Cursor specific files
+cursor/
+.cursor/
+
+# Node modules
+node_modules/
+
+# Build files
+dist/
+build/
+
+# Log files
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Mac OS specific files
+.DS_Store
+
+# Replit specific files
+.replit
+.breakpoints
+replit.nix 

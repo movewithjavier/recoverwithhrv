@@ -1,0 +1,51 @@
+# Python virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Cursor AI specific files
+.cursorrules
+.cursorignore
+README_devin.cursorrules.md
+
+# Development tools
+tools/
+.github/
+.devcontainer/
+.vscode.example/
+requirements/
+screenshots/
+requirements.txt
+
+# Git related
+.git/
+
+# Exclude everything except core website files
+/*
+!/.gitignore
+!/README.md
+!/index.html
+!/book.html
+!/header-test.html
+!/css/
+!/js/
+!/assets/ 
