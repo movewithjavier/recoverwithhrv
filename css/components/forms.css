@@ -1,0 +1,170 @@
+/* Form Component Styles */
+
+.form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form__group {
+  margin-bottom: var(--space-md);
+}
+
+.form__label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+/* Add styles for form labels in primary background sections */
+.bg-primary .form__label {
+  color: var(--light-color);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--light-color);
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: var(--border-radius-sm);
+  transition: border-color var(--transition-speed) var(--transition-timing), 
+              box-shadow var(--transition-speed) var(--transition-timing);
+}
+
+.form__input:focus {
+  border-color: var(--primary-color);
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.25);
+}
+
+.form__input::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form__input--error {
+  border-color: #dc3545;
+}
+
+.form__input--error:focus {
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.25);
+}
+
+.form__error {
+  display: block;
+  margin-top: var(--space-xs);
+  color: #dc3545;
+  font-size: 0.875rem;
+}
+
+.form__help-text {
+  display: block;
+  margin-top: var(--space-xs);
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+
+.form__privacy {
+  margin-top: var(--space-sm);
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.form__privacy a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Add styles for form privacy in primary background sections */
+.bg-primary .form__privacy {
+  color: var(--light-color);
+  opacity: 0.9;
+}
+
+.bg-primary .form__privacy a {
+  color: var(--light-color);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.form__submit {
+  margin-top: var(--space-md);
+}
+
+/* Email Signup Form */
+
+.email-signup {
+  background-color: var(--light-color);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Override for email signup in primary background */
+.bg-primary .email-signup {
+  background-color: rgba(var(--primary-color-dark-rgb), 0.3);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.email-signup__title {
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+
+.email-signup__description {
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.email-signup__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-signup__input-group {
+  display: flex;
+  margin-bottom: var(--space-sm);
+}
+
+.email-signup__input {
+  flex: 1;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
+
+.email-signup__button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Responsive Form */
+
+@media (max-width: 576px) {
+  .email-signup {
+    padding: var(--space-md);
+  }
+  
+  .email-signup__input-group {
+    flex-direction: column;
+  }
+  
+  .email-signup__input {
+    border-radius: var(--border-radius-sm);
+    border-right: 1px solid #ced4da;
+    margin-bottom: var(--space-xs);
+  }
+  
+  .email-signup__button {
+    border-radius: var(--border-radius-sm);
+  }
+} 

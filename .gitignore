@@ -1,0 +1,61 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Cursor specific files and AI assistance
+cursor/
+.cursor/
+.cursorrules
+.cursorignore
+tools/
+README_devin.cursorrules.md
+
+# Development and deployment scripts
+scripts/
+config/
+
+# Node modules and dependencies
+node_modules/
+package-lock.json
+
+# Build files
+dist/
+build/
+
+# Log files
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# IDE specific files
+.vscode/
+.idea/
+*.code-workspace
+.vscode.example/
+.devcontainer/
+
+# Mac OS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Python specific files
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+requirements/
+requirements.txt
+
+# Replit specific files (auto-generated)
+.replit
+.breakpoints
+replit.nix
+
+# Miscellaneous development files
+screenshots/
