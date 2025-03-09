@@ -29,13 +29,26 @@ app.use(express.static(path.join(__dirname)));
 // Serve files from the pages directory
 app.use('/pages', express.static(path.join(__dirname, 'pages')));
 
-// Handle redirects for consistency and backward compatibility
+// Handle routes for cleaner URLs
+app.get('/book', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'book.html'));
+});
+
+app.get('/thank-you', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'thank-you.html'));
+});
+
+app.get('/rolly', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'rolly.html'));
+});
+
+// Legacy support for .html extensions
 app.get('/book.html', (req, res) => {
-  res.redirect('/pages/book.html');
+  res.redirect('/book');
 });
 
 app.get('/thank-you.html', (req, res) => {
-  res.redirect('/pages/thank-you.html');
+  res.redirect('/thank-you');
 });
 
 // Legacy support for any other HTML files that might be moved
