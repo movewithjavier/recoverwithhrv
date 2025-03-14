@@ -1,0 +1,91 @@
+/* RecoverwithHRV - Updated Color Theme
+ * A more modern, gradient-rich color scheme with refined colors
+ */
+
+:root {
+  /* Primary Colors - Refined Palette */
+  --primary-color: #0693e3; /* Vivid Cyan Blue */
+  --primary-color-rgb: 6, 147, 227;
+  --primary-color-light: #8ed1fc; /* Pale Cyan Blue */
+  --primary-color-light-rgb: 142, 209, 252;
+  --primary-color-dark: #0073b7; /* Darker Cyan Blue */
+  --primary-color-dark-rgb: 0, 115, 183;
+  --primary-surface: #f0f7fc; /* Very Light Cyan Blue for Surfaces */
+  
+  /* Secondary Colors */
+  --secondary-color: #9b51e0; /* Vivid Purple */
+  --secondary-color-rgb: 155, 81, 224;
+  --secondary-color-light: #b989e8; /* Lighter Purple */
+  --secondary-color-light-rgb: 185, 137, 232;
+  --secondary-color-dark: #7e3bb8; /* Darker Purple */
+  --secondary-color-dark-rgb: 126, 59, 184;
+  --secondary-surface: #f7f1fd; /* Very Light Purple for Surfaces */
+  
+  /* Accent Colors */
+  --accent-color: #ff6900; /* Luminous Vivid Orange */
+  --accent-color-rgb: 255, 105, 0;
+  --accent-color-light: #ff8c40; /* Lighter Orange */
+  --accent-color-light-rgb: 255, 140, 64;
+  --accent-color-dark: #d95a00; /* Darker Orange */
+  --accent-color-dark-rgb: 217, 90, 0;
+  --accent-surface: #fff4ed; /* Very Light Orange for Surfaces */
+  
+  /* Neutral Colors */
+  --background-color: #ffffff;
+  --background-color-rgb: 255, 255, 255;
+  --light-color: #ffffff;
+  --light-color-rgb: 255, 255, 255;
+  --light-gray: #f7f9fc; /* Subtle Light Gray */
+  --light-gray-rgb: 247, 249, 252;
+  --dark-color: #222833; /* Almost Black with Blue Undertone */
+  --dark-color-rgb: 34, 40, 51;
+  
+  /* Text Colors */
+  --text-color: #333840; /* Dark Blue-Gray for Main Text */
+  --text-color-rgb: 51, 56, 64;
+  --text-color-secondary: #677387; /* Medium Blue-Gray for Secondary Text */
+  --text-color-secondary-rgb: 103, 115, 135;
+  
+  /* Border Colors */
+  --border-color: #e8eef4; /* Subtle Blue-Gray Border */
+  --border-color-rgb: 232, 238, 244;
+  
+  /* Status Colors */
+  --success-color: #00d084; /* Vivid Green Cyan */
+  --success-color-rgb: 0, 208, 132;
+  --warning-color: #fcb900; /* Luminous Vivid Amber */
+  --warning-color-rgb: 252, 185, 0;
+  --error-color: #cf2e2e; /* Vivid Red */
+  --error-color-rgb: 207, 46, 46;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #0693e3 0%, #33a7b5 100%);
+  --gradient-secondary: linear-gradient(135deg, #9b51e0 0%, #b192f3 100%);
+  --gradient-accent: linear-gradient(135deg, #ff6900 0%, #fd8f58 100%);
+  --gradient-cool-warm: linear-gradient(135deg, #4aeadc 0%, #9778d1 50%, #ff6a98 100%);
+  --gradient-pale-ocean: linear-gradient(135deg, #fff5cb 0%, #b6e3d4 50%, #33a7b5 100%);
+  --gradient-header: linear-gradient(135deg, #0693e3 0%, #38b6cc 100%);
+  --gradient-cta: linear-gradient(135deg, #ff6900 0%, #ff7e20 100%);
+  --gradient-subtle: linear-gradient(135deg, #f7f9fc 0%, #edf3f8 100%);
+  --gradient-hero: linear-gradient(135deg, #0563a3 0%, #0084c7 100%); /* Darker blue gradient for hero section */
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-btn: 0 4px 10px rgba(6, 147, 227, 0.2);
+  --shadow-btn-accent: 0 4px 10px rgba(255, 105, 0, 0.25);
+}
+
+/* Legacy variables for backward compatibility */
+:root {
+  --primary-rgb: var(--primary-color-rgb);
+  --secondary-rgb: var(--secondary-color-rgb);
+  --accent-rgb: var(--accent-color-rgb);
+  --text-rgb: var(--text-color-rgb);
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+  --color-accent: var(--accent-color);
+  --color-text: var(--text-color);
+  --color-text-secondary: var(--text-color-secondary);
+} 

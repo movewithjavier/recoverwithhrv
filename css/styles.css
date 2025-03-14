@@ -1,7 +1,9 @@
 /* RecoverwithHRV.com Main Stylesheet */
 
+/* NOTE: This stylesheet depends on color-theme.css being loaded before it */
+
 /* Import Google Fonts - Using more professional fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;450;600;700&display=swap');
 
 /* Import Component Styles */
 @import url('./components/header.css');
@@ -15,70 +17,26 @@
 @import url('./components/faq.css');
 @import url('./components/intro.css');
 @import url('./components/book.css');
+@import url('./components/problem.css');
+@import url('./components/solution.css');
+@import url('./components/email-signup.css');
+@import url('./components/story.css');
+@import url('./components/cta-box.css');
 
 /* CSS Variables */
 :root {
-  /* Colors - New Conversion-Focused Palette */
-  /* 
-   * Using a triadic color scheme with teal as the primary color
-   * Teal (primary) - Trustworthy, calming, professional
-   * Orange (accent) - Energetic, attention-grabbing, action-oriented
-   * Purple (secondary) - Wisdom, quality, luxury
-   */
-  
-  /* Primary Color - Teal (Base) */
-  --primary-color: #0D8A8C; /* Teal - professional, trustworthy */
-  --primary-color-rgb: 13, 138, 140;
-  --primary-color-light: #5CBFC0; /* Teal tint */
-  --primary-color-light-rgb: 92, 191, 192;
-  --primary-color-dark: #076466; /* Teal shade */
-  --primary-color-dark-rgb: 7, 100, 102;
-  
-  /* Secondary Color - Purple (Supporting) */
-  --secondary-color: #5B4E96; /* Purple - wisdom, quality */
-  --secondary-color-rgb: 91, 78, 150;
-  --secondary-color-light: #8A7EBB; /* Purple tint */
-  --secondary-color-light-rgb: 138, 126, 187;
-  --secondary-color-dark: #3A3169; /* Purple shade */
-  --secondary-color-dark-rgb: 58, 49, 105;
-  
-  /* Accent Color - Orange (CTA) */
-  --accent-color: #F06E3B; /* Slightly muted orange for better harmony */
-  --accent-color-rgb: 240, 110, 59;
-  --accent-color-light: #F59D7A; /* Orange tint */
-  --accent-color-light-rgb: 245, 157, 122;
-  --accent-color-dark: #D04E1B; /* Orange shade */
-  --accent-color-dark-rgb: 208, 78, 27;
-  
-  /* Neutral Colors */
-  --background-color: #FFFFFF; /* White - clean background */
-  --background-color-rgb: 255, 255, 255;
-  --light-color: #FFFFFF;
-  --light-color-rgb: 255, 255, 255;
-  --light-gray: #F5F7FA; /* Light gray for alternating sections */
-  --light-gray-rgb: 245, 247, 250;
-  --border-color: #E5E8ED; /* Subtle border color */
-  --border-color-rgb: 229, 232, 237;
-  --text-color: #2D3748; /* Dark blue-gray - body text */
-  --text-color-rgb: 45, 55, 72;
-  --text-color-secondary: #718096; /* Medium blue-gray - secondary text */
-  --text-color-secondary-rgb: 113, 128, 150;
-  
-  /* Success/Status Colors */
-  --success-color: #38B2AC; /* Teal-green - positive indicators */
-  --warning-color: #F6AD55; /* Orange - warnings */
-  --error-color: #E53E3E; /* Red - errors */
-  
-  /* Light/Dark */
-  --dark-color: #1A202C; /* Almost black */
-  
-  /* Typography */
-  --heading-font: 'Montserrat', sans-serif;
-  --body-font: 'Open Sans', sans-serif;
+  /* Base Font Size */
   --base-font-size: 16px;
-  --line-height: 1.6;
   
-  /* Spacing */
+  /* Line Heights */
+  --line-height: 1.65;
+  --line-height-headings: 1.3;
+  
+  /* Transitions */
+  --transition-speed: 0.3s;
+  --transition-timing: ease;
+  
+  /* Spacings */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
@@ -86,33 +44,20 @@
   --space-xl: 3rem;
   --space-xxl: 5rem;
   
-  /* Container */
-  --container-padding: 1.5rem;
+  /* Typography */
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+  
+  /* Layout */
   --container-max-width: 1200px;
+  --container-padding: 1.5rem;
+  --content-max-width: 800px;
   
   /* Border Radius */
   --border-radius-sm: 4px;
   --border-radius-md: 8px;
-  --border-radius-lg: 16px;
-  --border-radius-xl: 24px;
-  --border-radius-round: 50%;
-  
-  /* Shadows */
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
-  
-  /* Transitions */
-  --transition-speed: 0.2s;
-  --transition-timing: ease-in-out;
-  
-  /* Landing Page Specific */
-  --color-primary: var(--primary-color);
-  --color-primary-rgb: var(--primary-color-rgb);
-  --color-secondary: var(--secondary-color);
-  --color-accent: var(--accent-color);
-  --color-text: var(--text-color);
-  --color-text-secondary: var(--text-color-secondary);
+  --border-radius-lg: 12px;
+  --border-radius-xl: 20px;
 }
 
 /* Base Styles */
@@ -142,28 +87,31 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: var(--space-md);
   color: var(--dark-color);
   letter-spacing: -0.02em;
-  line-height: 1.3;
+  line-height: var(--line-height-headings);
 }
 
 h1 {
   font-size: 3rem;
+  font-weight: 800;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
 }
 
 p {
   margin-bottom: var(--space-md);
-  font-weight: 400;
+  font-weight: 450;
+  font-size: 1.25rem;
 }
 
 a {
@@ -181,6 +129,27 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+strong {
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+em {
+  font-style: italic;
+  color: var(--primary-color-dark);
+}
+
+ul, ol {
+  padding-left: 1.25rem;
+  margin-bottom: var(--space-md);
+}
+
+li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: var(--line-height);
 }
 
 /* Container */

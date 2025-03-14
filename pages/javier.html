@@ -12,237 +12,11 @@
   
   <!-- CSS -->
   <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/color-theme.css">
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/components/header.css">
-  <link rel="stylesheet" href="../css/components/buttons.css">
-  <link rel="stylesheet" href="../css/components/hero.css">
-  <link rel="stylesheet" href="../css/components/footer.css">
-  <link rel="stylesheet" href="../css/components/testimonials.css">
   
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  
-  <style>
-    /* Landing page specific styles */
-    .story-section {
-      padding: 4rem 0;
-      border-bottom: 1px solid rgba(var(--primary-rgb), 0.1);
-    }
-    
-    .story-section:last-child {
-      border-bottom: none;
-    }
-    
-    .content-wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    
-    .image-container {
-      text-align: center;
-      margin: 1.5rem 0;
-    }
-    
-    .image-container img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-    
-    .story-text {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      color: var(--text-color);
-    }
-    
-    .story-quote {
-      background-color: rgba(var(--primary-rgb), 0.05);
-      border-left: 4px solid var(--primary-color);
-      padding: 1.5rem;
-      margin: 2rem 0;
-      font-style: italic;
-      position: relative;
-    }
-    
-    .story-quote::before {
-      content: '"';
-      font-size: 4rem;
-      color: rgba(var(--primary-rgb), 0.2);
-      position: absolute;
-      top: -10px;
-      left: 10px;
-    }
-    
-    .cta-box {
-      background-color: var(--light-color);
-      padding: 2rem;
-      border-radius: 8px;
-      text-align: center;
-      margin: 3rem 0;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-      border: 1px solid rgba(var(--primary-rgb), 0.1);
-    }
-    
-    .cta-box h3 {
-      color: var(--primary-color);
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-    }
-    
-    .video-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      height: 0;
-      margin: 2rem 0;
-    }
-    
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 8px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-    
-    /* Hero modifications for landing page */
-    .hero {
-      padding: 8rem 0 6rem;
-      background-color: var(--primary-color);
-      color: white;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -100px;
-      right: -100px;
-      width: 400px;
-      height: 400px;
-      border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.05);
-      z-index: 1;
-    }
-    
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: -100px;
-      left: -100px;
-      width: 350px;
-      height: 350px;
-      border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.05);
-      z-index: 1;
-    }
-    
-    .hero__title {
-      font-size: 3.2rem;
-      margin-bottom: 1.5rem;
-      color: white;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    
-    .hero__subtitle {
-      font-size: 1.4rem;
-      max-width: 800px;
-      margin: 0 auto;
-      color: rgba(255, 255, 255, 0.9);
-    }
-    
-    /* Section headings */
-    .section-heading {
-      font-size: 2.2rem;
-      color: var(--primary-color);
-      margin: 3rem 0 1.5rem;
-      text-align: center;
-      position: relative;
-      padding-bottom: 0.5rem;
-    }
-    
-    .section-heading::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 3px;
-      background-color: var(--primary-color);
-      border-radius: 2px;
-    }
-    
-    .section-subheading {
-      font-size: 1.3rem;
-      color: var(--text-color);
-      margin-bottom: 2rem;
-      text-align: center;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      font-weight: 400;
-    }
-    
-    .highlight-box {
-      background-color: rgba(var(--accent-rgb), 0.05);
-      border-radius: 8px;
-      padding: 2rem;
-      margin: 2rem 0;
-      border: 1px solid rgba(var(--accent-rgb), 0.1);
-    }
-    
-    .highlight-box h4 {
-      color: var(--accent-color);
-      margin-top: 0;
-      font-size: 1.3rem;
-    }
-    
-    @media (min-width: 768px) {
-      .flex-container {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-      }
-      
-      .image-side {
-        flex: 1;
-      }
-      
-      .text-side {
-        flex: 2;
-      }
-      
-      .hero__title {
-        font-size: 3.8rem;
-      }
-      
-      .hero__subtitle {
-        font-size: 1.5rem;
-      }
-    }
-    
-    @media (max-width: 576px) {
-      .hero {
-        padding: 6rem 0 4rem;
-      }
-      
-      .hero__title {
-        font-size: 2.5rem;
-      }
-      
-      .section-heading {
-        font-size: 1.8rem;
-      }
-    }
-  </style>
 </head>
 <body>
   <!-- Header -->
@@ -253,13 +27,13 @@
         <span class="header__logo-text">RecoverwithHRV</span>
       </a>
       <div class="header__actions">
-        <a href="../index.html#email-signup" class="header__cta btn btn--outline-accent">Free Email Course</a>
+        <a href="#email-signup" class="header__cta">Get Free HRV Guide</a>
       </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero hero--gradient">
     <div class="container">
       <div class="hero__content text-center">
         <h1 class="hero__title">From Burnout to Balance: Javier's HRV Journey</h1>
@@ -334,7 +108,7 @@
         <div class="cta-box">
           <h3>Our HRV Recovery Blueprint guides you through our proven process for building strength and agility</h3>
           <p>Learn how to use Heart Rate Variability to optimize your training, just like Javier did</p>
-          <a href="/book" class="btn btn--accent">Learn More About The Book</a>
+          <a href="#email-form" class="btn btn--accent">Get Free Email Course</a>
         </div>
         
         <h3 class="section-heading">Too Many Tracking Apps, Too Little Insight</h3>
@@ -416,7 +190,27 @@
         <div class="cta-box">
           <h3>Ready to Start Your Own HRV Journey?</h3>
           <p>Learn how Heart Rate Variability monitoring can help you build strength, mobility, and better recovery - just like it did for Javier.</p>
-          <a href="../index.html#email-signup" class="btn btn--accent">Join Our Free 7-Day Email Course</a>
+          
+          <!-- Email signup form -->
+          <form id="email-signup-form" class="form">
+            <div class="form__group">
+              <label for="name" class="form__label">Your First Name</label>
+              <input type="text" id="name" name="first_name" class="form__input" placeholder="Enter your first name" required>
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">Your Email Address</label>
+              <input type="email" id="email" name="email" class="form__input" placeholder="Enter your email address" required>
+            </div>
+            <div class="form__submit">
+              <button type="submit" id="submit-button" class="btn btn--accent btn--block">
+                Get My Free HRV Course <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+            <p class="form__privacy">We respect your privacy. Unsubscribe at any time. <a href="#">Privacy Policy</a></p>
+          </form>
+          
+          <!-- Form submission message (starts hidden) -->
+          <div id="submission-message" style="display: none; text-align: center; padding: 2rem 0;"></div>
         </div>
       </div>
     </div>
@@ -439,5 +233,6 @@
 
   <!-- JavaScript -->
   <script src="../js/components/header-animation.js"></script>
+  <script src="../js/form-handler.js"></script>
 </body>
 </html> 

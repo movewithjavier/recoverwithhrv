@@ -1,0 +1,119 @@
+/* Solution Component Styles */
+
+.solution {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.solution__title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.solution__subtitle {
+  font-size: 1.25rem;
+  color: var(--text-color-secondary);
+  max-width: 800px;
+  margin: 0 auto var(--space-xl);
+  text-align: center;
+}
+
+.solution__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  background-color: white;
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(var(--primary-color-rgb), 0.1);
+}
+
+.solution__text {
+  flex: 3;
+}
+
+.solution__text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
+}
+
+.solution__text p strong {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.solution__image {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+}
+
+.solution__img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(var(--primary-color-rgb), 0.1);
+}
+
+.solution__cta {
+  margin-top: var(--space-lg);
+  text-align: center;
+}
+
+.solution__cta .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.solution__cta .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.solution__cta .btn i {
+  margin-left: 0.5rem;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .solution__content {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .solution__text {
+    order: 2;
+    padding-left: var(--space-lg);
+  }
+  
+  .solution__image {
+    flex: 2;
+    order: 1;
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .solution__title {
+    font-size: 2rem;
+  }
+  
+  .solution__subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .solution__content {
+    padding: var(--space-lg);
+  }
+  
+  .solution__text p {
+    font-size: 1rem;
+  }
+} 

@@ -28,18 +28,8 @@
   
   <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/color-theme.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/components/header.css">
-  <link rel="stylesheet" href="css/components/buttons.css">
-  <link rel="stylesheet" href="css/components/forms.css">
-  <link rel="stylesheet" href="css/components/hero.css">
-  <link rel="stylesheet" href="css/components/footer.css">
-  <link rel="stylesheet" href="css/components/testimonials.css">
-  <link rel="stylesheet" href="css/components/benefits.css">
-  <link rel="stylesheet" href="css/components/course-preview.css">
-  <link rel="stylesheet" href="css/components/faq.css">
-  <link rel="stylesheet" href="css/components/intro.css">
-  <link rel="stylesheet" href="css/components/book.css">
   
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -75,7 +65,7 @@
         <span class="header__logo-text">RecoverwithHRV</span>
       </a>
       <div class="header__actions">
-        <a href="#email-signup" class="header__cta btn btn--outline-accent">Free Email Course</a>
+        <a href="#email-signup" class="header__cta" style="background: var(--gradient-accent); color: white; box-shadow: var(--shadow-btn); border: none; font-weight: 600;">Free Email Course</a>
       </div>
     </div>
   </header>
@@ -171,33 +161,51 @@
     <div class="container">
       <h2 class="text-center mb-5">How HRV Will Transform Your Approach to Health</h2>
       <div class="benefits">
-        <div class="benefit">
-          <div class="benefit__icon">
-            <i class="fas fa-heartbeat"></i>
+        <div class="benefits__container">
+          <div class="benefit">
+            <div class="benefit__icon-wrapper">
+              <div class="benefit__icon">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+            </div>
+            <div class="benefit__content">
+              <h3 class="benefit__title">Optimize Recovery</h3>
+              <p class="benefit__text">Know exactly when to push harder and when to rest based on objective data about your body's recovery status.</p>
+            </div>
           </div>
-          <h3 class="benefit__title">Optimize Recovery</h3>
-          <p class="benefit__text">Know exactly when to push harder and when to rest based on objective data about your body's recovery status.</p>
-        </div>
-        <div class="benefit">
-          <div class="benefit__icon">
-            <i class="fas fa-dumbbell"></i>
+          <div class="benefit">
+            <div class="benefit__icon-wrapper">
+              <div class="benefit__icon">
+                <i class="fas fa-dumbbell"></i>
+              </div>
+            </div>
+            <div class="benefit__content">
+              <h3 class="benefit__title">Improve Performance</h3>
+              <p class="benefit__text">Enhance your physical performance by 15-20% by training at the right intensity at the right time.</p>
+            </div>
           </div>
-          <h3 class="benefit__title">Improve Performance</h3>
-          <p class="benefit__text">Enhance your physical performance by 15-20% by training at the right intensity at the right time.</p>
-        </div>
-        <div class="benefit">
-          <div class="benefit__icon">
-            <i class="fas fa-brain"></i>
+          <div class="benefit">
+            <div class="benefit__icon-wrapper">
+              <div class="benefit__icon">
+                <i class="fas fa-brain"></i>
+              </div>
+            </div>
+            <div class="benefit__content">
+              <h3 class="benefit__title">Manage Stress</h3>
+              <p class="benefit__text">Identify specific stressors in your life and develop effective strategies to mitigate their impact.</p>
+            </div>
           </div>
-          <h3 class="benefit__title">Manage Stress</h3>
-          <p class="benefit__text">Identify specific stressors in your life and develop effective strategies to mitigate their impact.</p>
-        </div>
-        <div class="benefit">
-          <div class="benefit__icon">
-            <i class="fas fa-bed"></i>
+          <div class="benefit">
+            <div class="benefit__icon-wrapper">
+              <div class="benefit__icon">
+                <i class="fas fa-bed"></i>
+              </div>
+            </div>
+            <div class="benefit__content">
+              <h3 class="benefit__title">Enhance Sleep</h3>
+              <p class="benefit__text">Optimize your sleep quality and duration based on your HRV patterns for faster recovery.</p>
+            </div>
           </div>
-          <h3 class="benefit__title">Enhance Sleep</h3>
-          <p class="benefit__text">Optimize your sleep quality and duration based on your HRV patterns for faster recovery.</p>
         </div>
       </div>
     </div>
@@ -208,58 +216,60 @@
     <div class="container">
       <h2 class="text-center mb-5">What You'll Learn in Your Free 7-Day Course</h2>
       <div class="course-preview">
-        <div class="course-day">
-          <div class="course-day__number">Day 1</div>
-          <div class="course-day__content">
-            <h3 class="course-day__title">HRV Fundamentals</h3>
-            <p class="course-day__text">Understand what HRV is and why it matters for your health and performance.</p>
+        <div class="course-preview__container">
+          <div class="course-day">
+            <div class="course-day__number">Day 1</div>
+            <div class="course-day__content">
+              <h3 class="course-day__title">HRV Fundamentals</h3>
+              <p class="course-day__text">Understand what HRV is and why it matters for your health and performance.</p>
+            </div>
+          </div>
+          <div class="course-day">
+            <div class="course-day__number">Day 2</div>
+            <div class="course-day__content">
+              <h3 class="course-day__title">Measuring Your HRV</h3>
+              <p class="course-day__text">Learn about different methods and tools to accurately measure your HRV.</p>
+            </div>
+          </div>
+          <div class="course-day">
+            <div class="course-day__number">Day 3</div>
+            <div class="course-day__content">
+              <h3 class="course-day__title">Interpreting Your Data</h3>
+              <p class="course-day__text">Discover how to make sense of your HRV readings and what they mean for you.</p>
+            </div>
+          </div>
+          <div class="course-day">
+            <div class="course-day__number">Day 4</div>
+            <div class="course-day__content">
+              <h3 class="course-day__title">HRV for Exercise</h3>
+              <p class="course-day__text">Use HRV to optimize your training schedule and avoid overtraining.</p>
+            </div>
+          </div>
+          <div class="course-day">
+            <div class="course-day__number">Day 5</div>
+            <div class="course-day__content">
+              <h3 class="course-day__title">HRV for Recovery</h3>
+              <p class="course-day__text">Implement recovery strategies based on your HRV data.</p>
+            </div>
+          </div>
+          <div class="course-day">
+            <div class="course-day__number">Day 6</div>
+            <div class="course-day__content">
+              <h3 class="course-day__title">HRV for Stress Management</h3>
+              <p class="course-day__text">Learn techniques to improve your HRV and manage stress more effectively.</p>
+            </div>
+          </div>
+          <div class="course-day">
+            <div class="course-day__number">Day 7</div>
+            <div class="course-day__content">
+              <h3 class="course-day__title">Creating Your HRV Plan</h3>
+              <p class="course-day__text">Develop a personalized plan to incorporate HRV monitoring into your daily routine.</p>
+            </div>
           </div>
         </div>
-        <div class="course-day">
-          <div class="course-day__number">Day 2</div>
-          <div class="course-day__content">
-            <h3 class="course-day__title">Measuring Your HRV</h3>
-            <p class="course-day__text">Learn about different methods and tools to accurately measure your HRV.</p>
-          </div>
+        <div class="course-preview__cta text-center mt-5">
+          <a href="#email-signup" class="btn btn--accent btn--lg">Get Instant Access <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="course-day">
-          <div class="course-day__number">Day 3</div>
-          <div class="course-day__content">
-            <h3 class="course-day__title">Interpreting Your Data</h3>
-            <p class="course-day__text">Discover how to make sense of your HRV readings and what they mean for you.</p>
-          </div>
-        </div>
-        <div class="course-day">
-          <div class="course-day__number">Day 4</div>
-          <div class="course-day__content">
-            <h3 class="course-day__title">HRV for Exercise</h3>
-            <p class="course-day__text">Use HRV to optimize your training schedule and avoid overtraining.</p>
-          </div>
-        </div>
-        <div class="course-day">
-          <div class="course-day__number">Day 5</div>
-          <div class="course-day__content">
-            <h3 class="course-day__title">HRV for Recovery</h3>
-            <p class="course-day__text">Implement recovery strategies based on your HRV data.</p>
-          </div>
-        </div>
-        <div class="course-day">
-          <div class="course-day__number">Day 6</div>
-          <div class="course-day__content">
-            <h3 class="course-day__title">HRV for Stress Management</h3>
-            <p class="course-day__text">Learn techniques to improve your HRV and manage stress more effectively.</p>
-          </div>
-        </div>
-        <div class="course-day">
-          <div class="course-day__number">Day 7</div>
-          <div class="course-day__content">
-            <h3 class="course-day__title">Creating Your HRV Plan</h3>
-            <p class="course-day__text">Develop a personalized plan to incorporate HRV monitoring into your daily routine.</p>
-          </div>
-        </div>
-      </div>
-      <div class="course-preview__cta text-center mt-5">
-        <a href="#email-signup" class="btn btn--accent btn--lg">Get Instant Access <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
@@ -354,46 +364,46 @@
   </section>
 
   <!-- Email Signup Section (Final CTA) -->
-  <section id="email-signup" class="section bg-primary" style="background-color: var(--primary-color);">
+  <section id="email-signup" class="email-signup-section">
     <div class="container">
-      <div class="email-signup" style="background-color: rgba(7, 100, 102, 0.3); backdrop-filter: blur(5px); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); border: 1px solid rgba(255, 255, 255, 0.1);">
-        <h2 class="email-signup__title" style="color: white;">Get Your Free 7-Day HRV Email Course</h2>
-        <p class="email-signup__description" style="color: white;">Join 5,000+ others who have transformed their health and performance with our HRV insights. Start your journey today!</p>
+      <div class="email-signup">
+        <h2 class="email-signup__title">Get Your Free 7-Day HRV Email Course</h2>
+        <p class="email-signup__description">Join 5,000+ others who have transformed their health and performance with our HRV insights. Start your journey today!</p>
         
         <!-- Trust indicators -->
         <div class="email-signup__trust">
           <div class="email-signup__trust-item">
-            <i class="fas fa-check-circle" style="color: white;"></i>
-            <span style="color: white;">Instant access to Day 1</span>
+            <i class="fas fa-check-circle"></i>
+            <span>Instant access to Day 1</span>
           </div>
           <div class="email-signup__trust-item">
-            <i class="fas fa-check-circle" style="color: white;"></i>
-            <span style="color: white;">100% free, no credit card</span>
+            <i class="fas fa-check-circle"></i>
+            <span>100% free, no credit card</span>
           </div>
           <div class="email-signup__trust-item">
-            <i class="fas fa-check-circle" style="color: white;"></i>
-            <span style="color: white;">Unsubscribe anytime</span>
+            <i class="fas fa-check-circle"></i>
+            <span>Unsubscribe anytime</span>
           </div>
         </div>
         
         <!-- Update form to use our server endpoint -->
         <form id="email-signup-form" class="email-signup__form form">
           <div class="form__group">
-            <label for="name" class="form__label" style="color: white; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Your First Name</label>
+            <label for="name" class="form__label">Your First Name</label>
             <input type="text" id="name" name="first_name" class="form__input" placeholder="Enter your first name" required>
           </div>
           <div class="form__group">
-            <label for="email" class="form__label" style="color: white; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Your Email Address</label>
+            <label for="email" class="form__label">Your Email Address</label>
             <input type="email" id="email" name="email" class="form__input" placeholder="Enter your email address" required>
           </div>
           <div class="form__submit">
-            <button type="submit" id="submit-button" class="btn btn--accent btn--block btn--lg">Get My Free HRV Course <i class="fas fa-arrow-right"></i></button>
+            <button type="submit" id="submit-button" class="btn btn--accent">Get My Free HRV Course <i class="fas fa-arrow-right"></i></button>
           </div>
-          <p class="form__privacy" style="color: white; opacity: 0.9;">We respect your privacy. Unsubscribe at any time. <a href="#" style="color: white; text-decoration: underline; font-weight: 600;">Privacy Policy</a></p>
+          <p class="form__privacy">We respect your privacy. Unsubscribe at any time. <a href="#">Privacy Policy</a></p>
         </form>
         
         <!-- Form submission message (starts hidden) -->
-        <div id="submission-message" style="display: none; text-align: center; color: white; padding: 2rem 0;"></div>
+        <div id="submission-message" style="display: none;"></div>
       </div>
     </div>
   </section>
