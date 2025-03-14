@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="From Burnout to Balance: Learn how Javier used Heart Rate Variability (HRV) to reclaim his athletic performance while finding balance as a busy dad.">
+  
+  <title>From Burnout to Balance: Javier's HRV Journey | RecoverwithHRV</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/images/logos/favicon.png">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/components/header.css">
+  <link rel="stylesheet" href="../css/components/buttons.css">
+  <link rel="stylesheet" href="../css/components/hero.css">
+  <link rel="stylesheet" href="../css/components/footer.css">
+  <link rel="stylesheet" href="../css/components/testimonials.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <style>
+    /* Landing page specific styles */
+    .story-section {
+      padding: 4rem 0;
+      border-bottom: 1px solid rgba(var(--primary-rgb), 0.1);
+    }
+    
+    .story-section:last-child {
+      border-bottom: none;
+    }
+    
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .image-container {
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+    
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .story-text {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--text-color);
+    }
+    
+    .story-quote {
+      background-color: rgba(var(--primary-rgb), 0.05);
+      border-left: 4px solid var(--primary-color);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      position: relative;
+    }
+    
+    .story-quote::before {
+      content: '"';
+      font-size: 4rem;
+      color: rgba(var(--primary-rgb), 0.2);
+      position: absolute;
+      top: -10px;
+      left: 10px;
+    }
+    
+    .cta-box {
+      background-color: var(--light-color);
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      margin: 3rem 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      border: 1px solid rgba(var(--primary-rgb), 0.1);
+    }
+    
+    .cta-box h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      margin: 2rem 0;
+    }
+    
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    /* Hero modifications for landing page */
+    .hero {
+      padding: 8rem 0 6rem;
+      background-color: var(--primary-color);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.05);
+      z-index: 1;
+    }
+    
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -100px;
+      left: -100px;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.05);
+      z-index: 1;
+    }
+    
+    .hero__title {
+      font-size: 3.2rem;
+      margin-bottom: 1.5rem;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .hero__subtitle {
+      font-size: 1.4rem;
+      max-width: 800px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    /* Section headings */
+    .section-heading {
+      font-size: 2.2rem;
+      color: var(--primary-color);
+      margin: 3rem 0 1.5rem;
+      text-align: center;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+    
+    .section-heading::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: var(--primary-color);
+      border-radius: 2px;
+    }
+    
+    .section-subheading {
+      font-size: 1.3rem;
+      color: var(--text-color);
+      margin-bottom: 2rem;
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 400;
+    }
+    
+    .highlight-box {
+      background-color: rgba(var(--accent-rgb), 0.05);
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 2rem 0;
+      border: 1px solid rgba(var(--accent-rgb), 0.1);
+    }
+    
+    .highlight-box h4 {
+      color: var(--accent-color);
+      margin-top: 0;
+      font-size: 1.3rem;
+    }
+    
+    @media (min-width: 768px) {
+      .flex-container {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+      
+      .image-side {
+        flex: 1;
+      }
+      
+      .text-side {
+        flex: 2;
+      }
+      
+      .hero__title {
+        font-size: 3.8rem;
+      }
+      
+      .hero__subtitle {
+        font-size: 1.5rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .hero {
+        padding: 6rem 0 4rem;
+      }
+      
+      .hero__title {
+        font-size: 2.5rem;
+      }
+      
+      .section-heading {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <a href="../index.html" class="header__logo">
+        <img src="../assets/images/logos/logo.svg" alt="RecoverwithHRV Logo" class="header__logo-img">
+        <span class="header__logo-text">RecoverwithHRV</span>
+      </a>
+      <div class="header__actions">
+        <a href="../index.html#email-signup" class="header__cta btn btn--outline-accent">Free Email Course</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content text-center">
+        <h1 class="hero__title">From Burnout to Balance: Javier's HRV Journey</h1>
+        <p class="hero__subtitle">Why Heart Rate Variability became the one metric that transformed this busy health coach's life</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Story Section -->
+  <section class="story-section bg-light">
+    <div class="container">
+      <div class="content-wrapper">
+        <h3 class="section-heading">Why HRV is the one metric for me</h3>
+        
+        <p class="story-text">
+          The year I turned 35 changed everything.
+        </p>
+        
+        <p class="story-text">
+          In the span of twelve months, I became a parent, launched my full-time health coaching practice, and moved into a new house for our growing family. It was a year of profound transitions—exciting, overwhelming, and humbling all at once.
+        </p>
+        
+        <div class="flex-container">
+          <div class="image-side">
+            <div class="image-container">
+              <img src="https://gmb.io/wp-content/uploads/2017/07/Amanda-Swimmer.png" alt="Javier as a health coach" title="How This Busy Health Coach Uses HRV to Optimize His Training">
+            </div>
+          </div>
+          <div class="text-side">
+            <p class="story-text">
+              As a health coach, I felt the pressure to embody peak wellness while juggling client sessions, midnight feedings, and my own training.
+            </p>
+            <p class="story-text">
+              I found myself juggling multiple tracking apps: logging sleep in one app, calories in another, exercise minutes in a third, and gym workouts in yet another. Each app promised to optimize some aspect of my health, but trying to maintain all these separate tracking systems was becoming its own source of stress.
+            </p>
+          </div>
+        </div>
+        
+        <p class="story-text">
+          But something had to give.
+        </p>
+        
+        <div class="highlight-box">
+          <h4>The challenges I faced:</h4>
+          <ul>
+            <li>My body wasn't bouncing back like it used to</li>
+            <li>Recovery took longer after workouts</li>
+            <li>Minor injuries lingered for weeks</li>
+            <li>My old "push through it" mentality started backfiring</li>
+          </ul>
+        </div>
+        
+        <p class="story-text">
+          I needed to get smarter about my health, not just work harder.
+        </p>
+        
+        <h3 class="section-heading">The HRV Breakthrough</h3>
+        <p class="section-subheading">How one simple metric changed everything</p>
+        
+        <p class="story-text">
+          Among all the metrics I'd tracked over the years, one stood out as genuinely useful. Not because it was the most sophisticated, but because it offered the most valuable insight with the least amount of effort.
+        </p>
+        
+        <div class="story-quote">
+          <p>"That was my Heart Rate Variability (HRV). This single measurement, taken in just a few minutes each morning, tells me enough about my body's readiness and recovery than all my other tracking combined."</p>
+        </div>
+        
+        <p class="story-text">
+          It's become my daily compass for navigating training, stress, and recovery—especially crucial now that I have less margin for error.
+        </p>
+        
+        <div class="cta-box">
+          <h3>Our HRV Recovery Blueprint guides you through our proven process for building strength and agility</h3>
+          <p>Learn how to use Heart Rate Variability to optimize your training, just like Javier did</p>
+          <a href="/book" class="btn btn--accent">Learn More About The Book</a>
+        </div>
+        
+        <h3 class="section-heading">Too Many Tracking Apps, Too Little Insight</h3>
+        
+        <div class="flex-container">
+          <div class="image-side">
+            <div class="image-container">
+              <img src="https://gmb.io/wp-content/uploads/2017/07/Amanda-and-son.jpg" alt="Javier with his family" title="How This Busy Health Coach Found Balance Through HRV">
+            </div>
+          </div>
+          <div class="text-side">
+            <p class="story-text">
+              As a health professional, I had access to countless tracking tools and metrics, but they were creating more confusion than clarity.
+            </p>
+            
+            <p class="story-text">
+              I was drowning in data but starving for actionable insights that could help me balance my new responsibilities with my health goals.
+            </p>
+          </div>
+        </div>
+        
+        <p class="story-text">
+          The turning point came when I discovered how HRV could simplify my approach to health and fitness. Instead of juggling multiple apps and metrics, I could rely on this one measurement to guide my daily decisions.
+        </p>
+        
+        <div class="image-container">
+          <img src="https://gmb.io/wp-content/uploads/2017/07/timeline.jpg" alt="Javier's HRV tracking journey" title="How HRV Monitoring Transformed Javier's Approach to Fitness">
+        </div>
+        
+        <h3 class="section-heading">A Smarter Approach to Health</h3>
+        <p class="section-subheading">Using HRV to navigate life's demands with precision</p>
+        
+        <p class="story-text">
+          HRV monitoring has taught me to listen to my body with greater precision. On days when my HRV is higher, I know I can push harder in my workouts. When it dips, I focus on recovery or lighter activities.
+        </p>
+        
+        <p class="story-text">
+          This approach has not only improved my physical performance but has given me the confidence to coach my clients more effectively. I can practice what I preach about sustainable fitness.
+        </p>
+        
+        <div class="story-quote">
+          <p>"This single measurement, taken in just a few minutes each morning, tells me more about my body's readiness and recovery than all my other tracking combined. It's become my daily compass for navigating training, stress, and recovery—especially crucial now that I have less margin for error."</p>
+        </div>
+        
+        <h3 class="section-heading">Beyond Personal Performance</h3>
+        
+        <div class="flex-container">
+          <div class="image-side">
+            <div class="image-container">
+              <img src="https://gmb.io/wp-content/uploads/2017/07/Amanda-handstand.jpg" alt="Javier demonstrating fitness techniques" title="How HRV Monitoring Helps Javier Balance Family and Fitness">
+            </div>
+          </div>
+          <div class="text-side">
+            <p class="story-text">
+              What started as a personal solution has become an integral part of my coaching practice.
+            </p>
+            
+            <p class="story-text">
+              I now help busy professionals and parents implement HRV monitoring to find their own optimal balance between performance and well-being.
+            </p>
+          </div>
+        </div>
+        
+        <p class="story-text">
+          The greatest benefit has been the ripple effect in my family life. By better managing my own energy and recovery, I'm more present for my family and more effective in my work. It's the definition of work-life synergy rather than work-life balance.
+        </p>
+        
+        <h3 class="section-heading">A Sustainable Approach to Wellness</h3>
+        <p class="section-subheading">How HRV helped create a system that works in real life</p>
+        
+        <p class="story-text">
+          The best part about HRV monitoring is its simplicity. Unlike complicated training programs or restrictive diets, it works with your life, not against it. It helps you make smarter decisions about when to push and when to rest.
+        </p>
+        
+        <p class="story-text">
+          This approach has transformed how I think about health and fitness. It's not about adhering to rigid plans or chasing arbitrary goals—it's about tuning into what your body truly needs each day.
+        </p>
+        
+        <div class="cta-box">
+          <h3>Ready to Start Your Own HRV Journey?</h3>
+          <p>Learn how Heart Rate Variability monitoring can help you build strength, mobility, and better recovery - just like it did for Javier.</p>
+          <a href="../index.html#email-signup" class="btn btn--accent">Join Our Free 7-Day Email Course</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__logo">
+        <img src="../assets/images/logos/logo-white.svg" alt="RecoverwithHRV Logo" class="footer__logo-img">
+      </div>
+      <div class="footer__links">
+        <a href="#" class="footer__link">Privacy Policy</a>
+        <a href="#" class="footer__link">Terms of Service</a>
+        <a href="#" class="footer__link">Contact Us</a>
+      </div>
+      <p class="footer__copyright">&copy; 2025 RecoverwithHRV. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../js/components/header-animation.js"></script>
+</body>
+</html> 

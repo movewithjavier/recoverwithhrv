@@ -38,8 +38,12 @@ app.get('/thank-you', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'thank-you.html'));
 });
 
+app.get('/javier', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'javier.html'));
+});
+
 app.get('/rolly', (req, res) => {
-  res.sendFile(path.join(__dirname, 'pages', 'rolly.html'));
+  res.redirect('/javier');
 });
 
 // Legacy support for .html extensions
